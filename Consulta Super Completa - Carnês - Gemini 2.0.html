@@ -172,10 +172,10 @@
     let bancoPagoData = [];
 
     function loadCSV() {
-      const bancoPath = 'https://raw.githubusercontent.com/GiovanePauloPedroski/consulta/main/BancoCARNE2026.csv';
-      const detalhesPath = 'https://raw.githubusercontent.com/GiovanePauloPedroski/consulta/main/BancoCAD2026.csv';
-      const parcelaPath = 'https://raw.githubusercontent.com/GiovanePauloPedroski/consulta/main/BancoPARCELA2026.csv';
-      const pagoPath = 'https://raw.githubusercontent.com/GiovanePauloPedroski/consulta/main/BancoPAGO2026.csv';
+      const bancoPath = 'https://raw.githubusercontent.com/GiovanePauloPedroski/AcaoEntreAmigos2026/main/BancoCARNE2026.csv';
+      const detalhesPath = 'https://raw.githubusercontent.com/GiovanePauloPedroski/AcaoEntreAmigos2026/main/BancoCAD2026.csv';
+      const parcelaPath = 'https://raw.githubusercontent.com/GiovanePauloPedroski/AcaoEntreAmigos2026/main/BancoPARCELA2026.csv';
+      const pagoPath = 'https://raw.githubusercontent.com/GiovanePauloPedroski/AcaoEntreAmigos2026/main/BancoPAGO2026.csv';
 
       Promise.all([
         fetch(bancoPath).then(res => res.text()),
@@ -266,4 +266,5 @@
   </script>
 </body>
 </html>
+
 
