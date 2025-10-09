@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Consulta de Carnês</title>
+  <title>Consulta de Carnês 2026</title>
   <style>
     :root {
       --primary: #7f8ff4;
@@ -136,7 +136,7 @@
   </style>
 </head>
 <body>
-  <h1>Consulta de Carnês</h1>
+  <h1>Consulta de Carnês 2026</h1>
   <div class="search-container">
     <div class="search-box">
       <input type="text" id="input1" placeholder="Digite o número para pesquisar..." onkeydown="handleKey(event, 'input1', 'result1')">
@@ -172,10 +172,10 @@
     let bancoPagoData = [];
 
     function loadCSV() {
-      const bancoPath = 'https://raw.githubusercontent.com/GiovanePauloPedroski/consulta/main/BancoCARNE.csv';
-      const detalhesPath = 'https://raw.githubusercontent.com/GiovanePauloPedroski/consulta/main/BancoCAD.csv';
-      const parcelaPath = 'https://raw.githubusercontent.com/GiovanePauloPedroski/consulta/main/BancoPARCELA.csv';
-      const pagoPath = 'https://raw.githubusercontent.com/GiovanePauloPedroski/consulta/main/BancoPAGO.csv';
+      const bancoPath = 'https://raw.githubusercontent.com/GiovanePauloPedroski/consulta/main/BancoCARNE2026.csv';
+      const detalhesPath = 'https://raw.githubusercontent.com/GiovanePauloPedroski/consulta/main/BancoCAD2026.csv';
+      const parcelaPath = 'https://raw.githubusercontent.com/GiovanePauloPedroski/consulta/main/BancoPARCELA2026.csv';
+      const pagoPath = 'https://raw.githubusercontent.com/GiovanePauloPedroski/consulta/main/BancoPAGO2026.csv';
 
       Promise.all([
         fetch(bancoPath).then(res => res.text()),
@@ -243,7 +243,7 @@
           }
           
         } else {
-          resultHTML += "Nenhum registro encontrado no BancoPARCELA.<br>";
+          resultHTML += "Nenhum registro encontrado no BancoPARCELA2026.<br>";
         }
 
         found = true;
@@ -266,3 +266,4 @@
   </script>
 </body>
 </html>
+
